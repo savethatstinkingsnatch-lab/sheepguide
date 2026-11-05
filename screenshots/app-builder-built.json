@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Flockstead — a field guide to raising sheep",
+      "hasCanvas": false,
+      "bodyTextLen": 2031,
+      "bodyTextHash": "d8a425cfd37f5bd7f698b39b3f5edb65bdf0f55f20131440d089277885a34a51",
+      "bodyTextPrefix": "Flockstead FIELD GUIDE Guide Breeds Planner The year FIELD GUIDE",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Flockstead — a field guide to raising sheep",
+      "hasCanvas": false,
+      "bodyTextLen": 1999,
+      "bodyTextHash": "597f8b783db5b434da298eb42a43fdc57b0271f9aaf95ad0d64151c85aae1ea5",
+      "bodyTextPrefix": "Flockstead Open menu FIELD GUIDE Raise a flock you can actually ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
