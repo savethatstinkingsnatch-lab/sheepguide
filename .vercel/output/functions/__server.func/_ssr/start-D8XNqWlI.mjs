@@ -1,6 +1,6 @@
 import { b as Link, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as GLOSSARY } from "./content-1VZToBA3.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/start-CUqdR3Tr.js
+import { n as GLOSSARY } from "./content-0JaxTs53.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/start-D8XNqWlI.js
 var import_jsx_runtime = require_jsx_runtime();
 var STEPS = [
 	"Check local rules.",

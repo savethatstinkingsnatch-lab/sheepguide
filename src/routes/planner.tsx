@@ -99,7 +99,8 @@ function PlannerPage() {
       <h1 className="mt-3 max-w-2xl font-display text-4xl sm:text-5xl">Size the flock before you buy the hay.</h1>
       <p className="mt-4 max-w-2xl text-lg text-muted">
         Growing-season pasture, a winter hay pile, water, shelter, and the date the lambs should show
-        up. Every figure is a planning range for a medium ewe, with waste included.
+        up. Acre, water, and mineral lines are rough starting estimates for a medium ewe, not a stocking
+        rate or a ration.
       </p>
 
       <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start">
@@ -128,6 +129,12 @@ function PlannerPage() {
 
           <fieldset className="mt-6">
             <legend className="text-sm font-medium">Pasture while it is growing</legend>
+            <p className="mt-2 text-sm text-muted">
+              The ewes-per-acre figures below are broad examples, not a stocking recommendation for a
+              particular place. Carrying capacity depends on local forage production, rainfall, soil, and
+              how the grass is managed. Extension offices treat stocking rates as variable. Ask them before
+              you trust an acre number.
+            </p>
             <div className="mt-3 grid gap-2">
               {PASTURES.map(([key, info]) => {
                 const active = pasture === key;
@@ -207,16 +214,16 @@ function PlannerPage() {
           <h2 className="font-display text-2xl">What to plan for</h2>
           <p className="mt-2 text-sm text-wool">{ramNote}</p>
           <dl className="mt-6 divide-y divide-white/15">
-            <Row label="Pasture in the growing season" value={`${formatNum(plan.acres, plan.acres < 10 ? 1 : 0)} acres`} hint={`${formatNum(plan.units, 1)} ewe-units at ${plan.rate} per acre`} />
+            <Row label="Pasture in the growing season" value={`${formatNum(plan.acres, plan.acres < 10 ? 1 : 0)} acres`} hint="Example only. Forage, rainfall, soil, and management decide what the ground can carry." />
             <Row
               label="Winter hay"
               value={plan.hayLb >= 2000 ? `${formatNum(plan.hayTons, 1)} tons` : `${formatNum(plan.hayLb)} lb`}
               hint={`${formatNum(plan.hayLb)} pounds as fed, waste included, for ${plan.winterDays} days`}
             />
-            <Row label="Water" value={`${formatNum(plan.waterGal, 0)} gal / day`} hint="All classes, with a heat allowance if you chose one" />
+            <Row label="Water, rough estimate" value={`${formatNum(plan.waterGal, 0)} gal / day`} hint="A fixed rate and a simple climate factor. Drinking changes with temperature, diet, pregnancy, lactation, and size. Size tanks with a veterinarian or extension office." />
             <Row label="Open shelter" value={`${formatNum(plan.shelterSqFt)} ft²`} hint="About 16 square feet per adult" />
             <Row label="Lambing jugs" value={String(plan.jugs)} hint="5×5 ft pens, one per eight ewes if they lamb together" />
-            <Row label="Sheep mineral" value={`${formatNum(plan.mineralLbMonth, 1)} lb / month`} hint="Free choice. Never cattle or goat mineral." />
+            <Row label="Sheep mineral, rough estimate" value={`${formatNum(plan.mineralLbMonth, 1)} lb / month`} hint="A fixed intake, not a measured appetite. Free choice, labeled for sheep — never cattle or goat mineral. Confirm the product locally." />
             <Row
               label="One square paddock"
               value={plan.perimeterFt > 0 ? `${formatNum(plan.perimeterFt)} ft of fence` : "—"}
@@ -224,8 +231,9 @@ function PlannerPage() {
             />
           </dl>
           <p className="mt-6 text-sm leading-relaxed text-wool">
-            About {formatNum(plan.lambs)} lambs if every ewe meets that average. Stocking is for the
-            growing season only — hay is separate, and arid range can need far more land than this sketch.
+            About {formatNum(plan.lambs)} lambs if every ewe meets that average. The acre figure is a
+            seasonal example, not advice for your farm. Hay is separate. Size water, mineral, and feed with
+            local veterinary or extension guidance.
           </p>
         </div>
       </div>
@@ -292,7 +300,7 @@ function PlannerPage() {
             <p className="rounded-2xl bg-clay-soft px-4 py-8">That date doesn’t parse. Try again.</p>
           ) : (
             <dl className="divide-y divide-line">
-              <DateRow label="Vaccinate ewes (typical CDT)" value={formatLong(lambing.cdt)} hint="About four weeks before the earliest lamb. Follow your vet and the label." />
+              <DateRow label="Vaccinate ewes (typical CDT)" value={formatLong(lambing.cdt)} hint="About four weeks before the earliest lamb is a common timing only for ewes who already finished a primary series. Unvaccinated ewes need the series on the label. Follow your vet." />
               <DateRow label="Jugs bedded, kit in the barn" value={formatLong(lambing.prep)} hint="A week before the first possible lamb." />
               <DateRow label="Earliest lamb" value={formatLong(lambing.earliest)} hint="Day 142." />
               <DateRow

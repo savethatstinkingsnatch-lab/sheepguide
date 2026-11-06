@@ -1,9 +1,9 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { J as require_react, _ as lazyRouteComponent, b as Link, d as Scripts, f as HeadContent, g as Outlet, h as createRouter, p as useRouterState, q as require_jsx_runtime, v as createFileRoute, x as useRouter, y as createRootRoute } from "../_libs/@tanstack/react-router+[...].mjs";
-import { i as getChapter } from "./content-1VZToBA3.mjs";
+import { i as getChapter } from "./content-0JaxTs53.mjs";
 import { i as Menu, n as TriangleAlert, t as X } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-D45gCUAw.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D4uaRVNS.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -519,7 +519,7 @@ var Route$6 = createRootRoute({
 		})]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./routes-B4L-MLOu.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-ttV085bV.mjs");
 var Route$5 = createFileRoute("/")({
 	head: () => ({ meta: [{ title: "Sheep: Flockstead — a field guide to raising sheep" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
@@ -529,22 +529,22 @@ var Route$4 = createFileRoute("/breeds")({
 	head: () => ({ meta: [{ title: "Breed book — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./planner-eWvXbLyD.mjs");
+var $$splitComponentImporter$3 = () => import("./planner-DOgrQWe6.mjs");
 var Route$3 = createFileRoute("/planner")({
 	head: () => ({ meta: [{ title: "Flock planner — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./start-CUqdR3Tr.mjs");
+var $$splitComponentImporter$2 = () => import("./start-D8XNqWlI.mjs");
 var Route$2 = createFileRoute("/start")({
 	head: () => ({ meta: [{ title: "Start here — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./year-ikBfIPTG.mjs");
+var $$splitComponentImporter$1 = () => import("./year-CvjZqzGW.mjs");
 var Route$1 = createFileRoute("/year")({
 	head: () => ({ meta: [{ title: "The working year — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./guide._slug-9ZMVJvh9.mjs");
+var $$splitComponentImporter = () => import("./guide._slug-DgbmDJdS.mjs");
 var Route = createFileRoute("/guide/$slug")({
 	head: ({ params }) => {
 		const chapter = getChapter(params.slug);

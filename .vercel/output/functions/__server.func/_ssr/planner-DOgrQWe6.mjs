@@ -1,6 +1,6 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { J as require_react, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/planner-eWvXbLyD.js
+//#region node_modules/.nitro/vite/services/ssr/assets/planner-DOgrQWe6.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var PASTURE_RATES = {
@@ -194,7 +194,7 @@ function PlannerPage() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-4 max-w-2xl text-lg text-muted",
-				children: "Growing-season pasture, a winter hay pile, water, shelter, and the date the lambs should show up. Every figure is a planning range for a medium ewe, with waste included."
+				children: "Growing-season pasture, a winter hay pile, water, shelter, and the date the lambs should show up. Acre, water, and mineral lines are rough starting estimates for a medium ewe, not a stocking rate or a ration."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start",
@@ -246,34 +246,41 @@ function PlannerPage() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("fieldset", {
 							className: "mt-6",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("legend", {
-								className: "text-sm font-medium",
-								children: "Pasture while it is growing"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "mt-3 grid gap-2",
-								children: PASTURES.map(([key, info]) => {
-									const active = pasture === key;
-									return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
-										className: active ? "flex cursor-pointer gap-3 rounded-xl bg-sage-soft px-3 py-3 ring-1 ring-sage" : "flex cursor-pointer gap-3 rounded-xl px-3 py-3 ring-1 ring-line",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-											type: "radio",
-											name: "pasture",
-											className: "mt-1 accent-sage",
-											checked: active,
-											onChange: () => setPasture(key)
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-											className: "block font-medium",
-											children: [info.label, /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-												className: "ml-2 font-normal text-muted tabular-nums",
-												children: [info.ewesPerAcre, " ewe-units / acre"]
-											})]
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "mt-0.5 block text-sm text-muted",
-											children: info.note
-										})] })]
-									}, key);
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("legend", {
+									className: "text-sm font-medium",
+									children: "Pasture while it is growing"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-2 text-sm text-muted",
+									children: "The ewes-per-acre figures below are broad examples, not a stocking recommendation for a particular place. Carrying capacity depends on local forage production, rainfall, soil, and how the grass is managed. Extension offices treat stocking rates as variable. Ask them before you trust an acre number."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "mt-3 grid gap-2",
+									children: PASTURES.map(([key, info]) => {
+										const active = pasture === key;
+										return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+											className: active ? "flex cursor-pointer gap-3 rounded-xl bg-sage-soft px-3 py-3 ring-1 ring-sage" : "flex cursor-pointer gap-3 rounded-xl px-3 py-3 ring-1 ring-line",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+												type: "radio",
+												name: "pasture",
+												className: "mt-1 accent-sage",
+												checked: active,
+												onChange: () => setPasture(key)
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+												className: "block font-medium",
+												children: [info.label, /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+													className: "ml-2 font-normal text-muted tabular-nums",
+													children: [info.ewesPerAcre, " ewe-units / acre"]
+												})]
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												className: "mt-0.5 block text-sm text-muted",
+												children: info.note
+											})] })]
+										}, key);
+									})
 								})
-							})]
+							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "mt-6 grid gap-4 sm:grid-cols-2",
@@ -346,7 +353,7 @@ function PlannerPage() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
 									label: "Pasture in the growing season",
 									value: `${formatNum(plan.acres, plan.acres < 10 ? 1 : 0)} acres`,
-									hint: `${formatNum(plan.units, 1)} ewe-units at ${plan.rate} per acre`
+									hint: "Example only. Forage, rainfall, soil, and management decide what the ground can carry."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
 									label: "Winter hay",
@@ -354,9 +361,9 @@ function PlannerPage() {
 									hint: `${formatNum(plan.hayLb)} pounds as fed, waste included, for ${plan.winterDays} days`
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
-									label: "Water",
+									label: "Water, rough estimate",
 									value: `${formatNum(plan.waterGal, 0)} gal / day`,
-									hint: "All classes, with a heat allowance if you chose one"
+									hint: "A fixed rate and a simple climate factor. Drinking changes with temperature, diet, pregnancy, lactation, and size. Size tanks with a veterinarian or extension office."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
 									label: "Open shelter",
@@ -369,9 +376,9 @@ function PlannerPage() {
 									hint: "5×5 ft pens, one per eight ewes if they lamb together"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
-									label: "Sheep mineral",
+									label: "Sheep mineral, rough estimate",
 									value: `${formatNum(plan.mineralLbMonth, 1)} lb / month`,
-									hint: "Free choice. Never cattle or goat mineral."
+									hint: "A fixed intake, not a measured appetite. Free choice, labeled for sheep — never cattle or goat mineral. Confirm the product locally."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
 									label: "One square paddock",
@@ -385,7 +392,7 @@ function PlannerPage() {
 							children: [
 								"About ",
 								formatNum(plan.lambs),
-								" lambs if every ewe meets that average. Stocking is for the growing season only — hay is separate, and arid range can need far more land than this sketch."
+								" lambs if every ewe meets that average. The acre figure is a seasonal example, not advice for your farm. Hay is separate. Size water, mineral, and feed with local veterinary or extension guidance."
 							]
 						})
 					]
@@ -455,7 +462,7 @@ function PlannerPage() {
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DateRow, {
 								label: "Vaccinate ewes (typical CDT)",
 								value: formatLong(lambing.cdt),
-								hint: "About four weeks before the earliest lamb. Follow your vet and the label."
+								hint: "About four weeks before the earliest lamb is a common timing only for ewes who already finished a primary series. Unvaccinated ewes need the series on the label. Follow your vet."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DateRow, {
 								label: "Jugs bedded, kit in the barn",

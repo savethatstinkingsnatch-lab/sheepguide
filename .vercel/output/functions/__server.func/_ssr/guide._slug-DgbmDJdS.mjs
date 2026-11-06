@@ -1,8 +1,8 @@
 import { b as Link, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as headingId, i as getChapter, o as readMinutes, r as chapterIndex, t as CHAPTERS } from "./content-1VZToBA3.mjs";
+import { a as headingId, i as getChapter, o as readMinutes, r as chapterIndex, t as CHAPTERS } from "./content-0JaxTs53.mjs";
 import { n as TriangleAlert, o as ChevronRight, r as NotebookPen, s as ChevronLeft } from "../_libs/lucide-react.mjs";
-import { n as Route } from "./router-D45gCUAw.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/guide._slug-9ZMVJvh9.js
+import { n as Route } from "./router-D4uaRVNS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/guide._slug-DgbmDJdS.js
 var import_jsx_runtime = require_jsx_runtime();
 function Blocks({ blocks }) {
 	let heading = 0;

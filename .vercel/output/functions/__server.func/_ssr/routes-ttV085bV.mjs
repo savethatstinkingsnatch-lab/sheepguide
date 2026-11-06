@@ -1,7 +1,7 @@
 import { b as Link, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as CHAPTERS } from "./content-1VZToBA3.mjs";
+import { t as CHAPTERS } from "./content-0JaxTs53.mjs";
 import { a as Library, c as CalendarDays, l as Calculator, u as ArrowUpRight } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B4L-MLOu.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-ttV085bV.js
 var import_jsx_runtime = require_jsx_runtime();
 var TOOLS = [
 	{

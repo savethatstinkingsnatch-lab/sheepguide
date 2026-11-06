@@ -206,7 +206,7 @@ export const CHAPTERS: Chapter[] = [
       },
       {
         type: "table",
-        caption: "Planning portions for a roughly 150 lb ewe. Weigh your own hay; flakes lie.",
+        caption: "A planning example for a roughly 150 lb ewe, not a ration. What she needs changes with body weight, hay quality, stage of pregnancy, and litter size. Weigh the hay and test the forage.",
         headers: ["Class", "As-fed hay", "What changes"],
         rows: [
           ["Dry, mid-gestation", "3.5–4.5 lb", "Good grass hay may be the whole ration"],
@@ -284,12 +284,12 @@ export const CHAPTERS: Chapter[] = [
       { type: "h", text: "Feet" },
       {
         type: "p",
-        text: "Trim when walls fold over the sole or a sheep walks on her heels — often two to four times a year, less on rocky ground, more in mud. Foot scald is a wet irritation between the toes. Foot rot smells worse, goes deeper, and spreads. Separate lame sheep, keep them on dry footing, and get a diagnosis before you start a dozen bottles. Never buy from a flock that treats foot rot as normal.",
+        text: "Check feet often. Trim when the wall folds over the sole or a sheep is walking on her heels — not on a fixed calendar. Need depends on terrain, housing, and how fast that sheep’s hoof grows. Rocky ground wears them down; mud and soft lots do not. Routine over-trimming can make feet sore. Foot scald is a wet irritation between the toes. Foot rot smells worse, goes deeper, and spreads. Separate lame sheep, keep them on dry footing, and get a diagnosis before you start a dozen bottles. Never buy from a flock that treats foot rot as normal.",
       },
       { type: "h", text: "The vaccine almost every flock uses" },
       {
         type: "p",
-        text: "CDT covers Clostridium perfringens types C and D plus tetanus — overeating disease and a dirty wound. A common pattern is to vaccinate ewes two to four weeks before lambing so colostrum carries the protection, then vaccinate lambs later and booster them. Exact timing depends on the product and on whether the dam was vaccinated. Read the label with your vet. Other vaccines — sore mouth, abortion agents, caseous lymphadenitis — are flock decisions, not automatic shopping.",
+        text: "CDT covers Clostridium perfringens types C and D plus tetanus — overeating disease and a dirty wound. For ewes who have already completed a primary series, a dose two to four weeks before lambing is a common way to put antibodies in the colostrum. An animal starting vaccination needs a primary series. How many doses, and how far apart, depend on that product’s label and on your veterinarian — one pre-lambing shot is not the series. Lambs are vaccinated later, on the same label, and then boostered. Other vaccines — sore mouth, abortion agents, caseous lymphadenitis — are flock decisions, not automatic shopping.",
       },
       {
         type: "table",
@@ -301,7 +301,7 @@ export const CHAPTERS: Chapter[] = [
           ["Straining dark scours in lambs", "Coccidia", "Dry bedding, separate water, vet the same day"],
           ["Stiff, star-gazing lamb", "Tetanus or a metabolic crash", "This is an emergency call"],
           ["Maggots in the wool", "Flystrike", "Clip to live skin and treat now"],
-          ["Bloated tight left side, distressed", "Bloat", "Get her walking and get help. Do not wait it out"],
+          ["Bloated tight left side, distressed", "Bloat", "Call a veterinarian immediately. Bloat can rapidly impair breathing and become fatal; don’t delay care."],
         ],
       },
       {
@@ -353,7 +353,7 @@ export const CHAPTERS: Chapter[] = [
       { type: "h", text: "The last month" },
       {
         type: "p",
-        text: "Most fetal growth is late. Raise energy over the last four to six weeks without making ewes so fat they cannot lamb. Crutch wool off the udder and dock a few weeks ahead so a newborn can find skin. Vaccinate for CDT on the schedule your vet likes, often two to four weeks before the first due date, and booster sheep who have never had the series. Bed the jugs. Buy iodine, obstetric lube, and a lamb milk replacer before you need them at 2 a.m.",
+        text: "Most fetal growth is late. Raise energy over the last four to six weeks without making ewes so fat they cannot lamb. Crutch wool off the udder and dock a few weeks ahead so a newborn can find skin. For ewes who already completed a CDT series, a dose two to four weeks before the first due date is a common way to load the colostrum. An ewe who has never had the series needs a primary series — the number of doses and the spacing come from the product label and your veterinarian, not from a single shot called a booster. Bed the jugs. Buy iodine, obstetric lube, and a lamb milk replacer before you need them at 2 a.m.",
       },
       { type: "h", text: "Pregnancy toxemia" },
       {

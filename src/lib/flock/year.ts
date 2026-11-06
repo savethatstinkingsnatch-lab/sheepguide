@@ -46,7 +46,7 @@ export const SEASONS: Season[] = [
       {
         id: "winter-cdt",
         label: "CDT the ewes before lambing",
-        detail: "Typically two to four weeks ahead, so antibodies reach the colostrum. Follow the label and your vet, not a rumor.",
+        detail: "For ewes who already finished a primary series, a dose two to four weeks before lambing is a common way to load the colostrum. An unvaccinated ewe needs the primary series on the product label, not one shot called a booster. Follow the label and your vet.",
       },
       {
         id: "winter-shelter",
@@ -89,8 +89,8 @@ export const SEASONS: Season[] = [
       },
       {
         id: "spring-feet",
-        label: "Trim feet while they are in",
-        detail: "Mud season hides rot. Smell the hoof. One lame sheep is a flock problem until you prove otherwise.",
+        label: "Check feet while they are in",
+        detail: "Mud season hides rot. Trim only when the wall needs it — over-trimming makes feet sore. Smell the hoof. One lame sheep is a flock problem until you prove otherwise.",
       },
     ],
   },
@@ -158,7 +158,7 @@ export const SEASONS: Season[] = [
       {
         id: "fall-feet2",
         label: "Hooves before the mud returns",
-        detail: "Trim ahead of breeding so a lame ram is not your breeding program.",
+        detail: "Check hooves before breeding. Trim a lame or overgrown foot so a ram who cannot mount is not your breeding program.",
       },
       {
         id: "fall-replacements",
