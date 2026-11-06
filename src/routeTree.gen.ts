@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BreedsRouteImport } from './routes/breeds'
 import { Route as PlannerRouteImport } from './routes/planner'
+import { Route as StartRouteImport } from './routes/start'
 import { Route as YearRouteImport } from './routes/year'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 
@@ -30,6 +31,11 @@ const PlannerRoute = PlannerRouteImport.update({
   path: '/planner',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StartRoute = StartRouteImport.update({
+  id: '/start',
+  path: '/start',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const YearRoute = YearRouteImport.update({
   id: '/year',
   path: '/year',
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/breeds': typeof BreedsRoute
   '/planner': typeof PlannerRoute
+  '/start': typeof StartRoute
   '/year': typeof YearRoute
   '/guide/$slug': typeof GuideSlugRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/breeds': typeof BreedsRoute
   '/planner': typeof PlannerRoute
+  '/start': typeof StartRoute
   '/year': typeof YearRoute
   '/guide/$slug': typeof GuideSlugRoute
 }
@@ -60,21 +68,30 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/breeds': typeof BreedsRoute
   '/planner': typeof PlannerRoute
+  '/start': typeof StartRoute
   '/year': typeof YearRoute
   '/guide/$slug': typeof GuideSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/breeds' | '/planner' | '/year' | '/guide/$slug'
+  fullPaths: '/' | '/breeds' | '/planner' | '/start' | '/year' | '/guide/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/breeds' | '/planner' | '/year' | '/guide/$slug'
-  id: '__root__' | '/' | '/breeds' | '/planner' | '/year' | '/guide/$slug'
+  to: '/' | '/breeds' | '/planner' | '/start' | '/year' | '/guide/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/breeds'
+    | '/planner'
+    | '/start'
+    | '/year'
+    | '/guide/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BreedsRoute: typeof BreedsRoute
   PlannerRoute: typeof PlannerRoute
+  StartRoute: typeof StartRoute
   YearRoute: typeof YearRoute
   GuideSlugRoute: typeof GuideSlugRoute
 }
@@ -102,6 +119,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PlannerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/start': {
+      id: '/start'
+      path: '/start'
+      fullPath: '/start'
+      preLoaderRoute: typeof StartRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/year': {
       id: '/year'
       path: '/year'
@@ -123,6 +147,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BreedsRoute: BreedsRoute,
   PlannerRoute: PlannerRoute,
+  StartRoute: StartRoute,
   YearRoute: YearRoute,
   GuideSlugRoute: GuideSlugRoute,
 }

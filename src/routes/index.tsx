@@ -4,7 +4,7 @@ import { CHAPTERS } from "@/lib/flock/content";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    meta: [{ title: "Flockstead — a field guide to raising sheep" }],
+    meta: [{ title: "Sheep: Flockstead — a field guide to raising sheep" }],
   }),
   component: Home,
 });
@@ -56,8 +56,8 @@ function Home() {
             catalog.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/guide/$slug" params={{ slug: "starting" }} className="btn btn-primary">
-              Start with the flock
+            <Link to="/start" className="btn btn-primary">
+              New to sheep? Start here
             </Link>
             <Link to="/planner" className="btn bg-surface text-ink hover:bg-paper-deep">
               Size hay and acres
@@ -132,7 +132,7 @@ function Home() {
         <div className="rounded-2xl bg-clay-deep px-5 py-6 text-surface">
           <p className="font-display text-4xl">No Cu</p>
           <p className="mt-2 text-sm leading-relaxed">
-            Cattle mineral and a lot of goat feed carry copper sheep cannot clear. Buy sheep mineral.
+            Cattle or goat mineral can kill sheep. Use a mineral labeled for sheep only.
           </p>
         </div>
       </section>

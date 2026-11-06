@@ -13,7 +13,7 @@ import {
 
 export const Route = createFileRoute("/planner")({
   head: () => ({
-    meta: [{ title: "Flock planner — Flockstead" }],
+    meta: [{ title: "Flock planner — Sheep: Flockstead" }],
   }),
   component: PlannerPage,
 });
@@ -216,7 +216,7 @@ function PlannerPage() {
             <Row label="Water" value={`${formatNum(plan.waterGal, 0)} gal / day`} hint="All classes, with a heat allowance if you chose one" />
             <Row label="Open shelter" value={`${formatNum(plan.shelterSqFt)} ft²`} hint="About 16 square feet per adult" />
             <Row label="Lambing jugs" value={String(plan.jugs)} hint="5×5 ft pens, one per eight ewes if they lamb together" />
-            <Row label="Sheep mineral" value={`${formatNum(plan.mineralLbMonth, 1)} lb / month`} hint="Free choice. Never a cattle mix." />
+            <Row label="Sheep mineral" value={`${formatNum(plan.mineralLbMonth, 1)} lb / month`} hint="Free choice. Never cattle or goat mineral." />
             <Row
               label="One square paddock"
               value={plan.perimeterFt > 0 ? `${formatNum(plan.perimeterFt)} ft of fence` : "—"}

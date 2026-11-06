@@ -4,7 +4,7 @@ import { filterBreeds, type BreedFilter, type Purpose } from "@/lib/flock/breeds
 
 export const Route = createFileRoute("/breeds")({
   head: () => ({
-    meta: [{ title: "Breed book — Flockstead" }],
+    meta: [{ title: "Breed book — Sheep: Flockstead" }],
   }),
   component: BreedsPage,
 });

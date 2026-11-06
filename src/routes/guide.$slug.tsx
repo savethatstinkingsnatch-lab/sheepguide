@@ -6,7 +6,7 @@ export const Route = createFileRoute("/guide/$slug")({
   head: ({ params }) => {
     const chapter = getChapter(params.slug);
     return {
-      meta: [{ title: chapter ? `${chapter.title} — Flockstead` : "Not in the book — Flockstead" }],
+      meta: [{ title: chapter ? `${chapter.title} — Sheep: Flockstead` : "Not in the book — Sheep: Flockstead" }],
     };
   },
   component: GuideChapter,

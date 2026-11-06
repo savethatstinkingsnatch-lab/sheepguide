@@ -1,9 +1,9 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { J as require_react, _ as lazyRouteComponent, b as Link, d as Scripts, f as HeadContent, g as Outlet, h as createRouter, p as useRouterState, q as require_jsx_runtime, v as createFileRoute, x as useRouter, y as createRootRoute } from "../_libs/@tanstack/react-router+[...].mjs";
-import { r as getChapter } from "./content-BBE6pLtw.mjs";
+import { i as getChapter } from "./content-1VZToBA3.mjs";
 import { i as Menu, n as TriangleAlert, t as X } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CiujCTLS.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D45gCUAw.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -343,6 +343,11 @@ function PreviewHostBridge() {
 }
 var LINKS = [
 	{
+		to: "/start",
+		label: "Start here",
+		match: (path) => path.startsWith("/start")
+	},
+	{
 		to: "/",
 		label: "Guide",
 		match: (path) => path === "/" || path.startsWith("/guide")
@@ -372,19 +377,26 @@ function Shell({ children }) {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
 				className: "sticky top-0 z-30 border-b border-line bg-paper/95 backdrop-blur-sm",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6",
+					className: "mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-2 sm:px-6",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
 							to: "/",
-							className: "flex items-baseline gap-2",
+							className: "flex min-w-0 flex-col py-1 leading-tight",
 							onClick: () => setOpen(false),
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "font-display text-2xl tracking-tight text-ink",
-								children: "Flockstead"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "hidden text-xs font-medium tracking-widest text-muted uppercase sm:inline",
-								children: "Field guide"
-							})]
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "font-display text-2xl tracking-tight text-ink",
+									children: "Flockstead"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs text-muted",
+									children: "The Education Revolution Pocket Guide, Volume 29: Sheep"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-xs text-muted",
+									children: "by Blue and the Awesome Dudes"
+								})
+							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
 							className: "hidden items-center gap-1 md:flex",
@@ -435,15 +447,15 @@ function Shell({ children }) {
 				className: "mx-auto max-w-6xl px-4 py-12 text-sm text-muted sm:px-6",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "max-w-3xl",
-					children: "Flockstead is a field guide for learning, not a diagnosis or a feed ticket. Confirm dosing, vaccines, and rations with a veterinarian who knows sheep, and with your local extension service. Copper in cattle mineral can kill sheep."
+					children: "Flockstead is a field guide for learning, not a diagnosis or a feed ticket. Confirm dosing, withdrawals, and disease programs with a veterinarian. Copper in cattle or goat mineral can kill sheep. Blue and the Awesome Dudes are not responsible for illness, injury, citations, or flock loss. Part of The Education Revolution pocket guide series. Privacy: This guide does not collect your name, email, or any personal information. Your checklist marks are saved only on your own device."
 				})
 			})
 		]
 	});
 }
-var styles_default = "/assets/styles-YEDjoEBM.css";
-var APP_NAME = "Flockstead";
-var Route$5 = createRootRoute({
+var styles_default = "/assets/styles-0kZJt3PS.css";
+var APP_NAME = "Sheep: Flockstead";
+var Route$6 = createRootRoute({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -507,62 +519,72 @@ var Route$5 = createRootRoute({
 		})]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./routes-FHFkH2l3.mjs");
-var Route$4 = createFileRoute("/")({
-	head: () => ({ meta: [{ title: "Flockstead — a field guide to raising sheep" }] }),
+var $$splitComponentImporter$5 = () => import("./routes-B4L-MLOu.mjs");
+var Route$5 = createFileRoute("/")({
+	head: () => ({ meta: [{ title: "Sheep: Flockstead — a field guide to raising sheep" }] }),
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
+});
+var $$splitComponentImporter$4 = () => import("./breeds-YnrcPRJ0.mjs");
+var Route$4 = createFileRoute("/breeds")({
+	head: () => ({ meta: [{ title: "Breed book — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./breeds-YnrcPRJ0.mjs");
-var Route$3 = createFileRoute("/breeds")({
-	head: () => ({ meta: [{ title: "Breed book — Flockstead" }] }),
+var $$splitComponentImporter$3 = () => import("./planner-eWvXbLyD.mjs");
+var Route$3 = createFileRoute("/planner")({
+	head: () => ({ meta: [{ title: "Flock planner — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./planner-BeYYUf2b.mjs");
-var Route$2 = createFileRoute("/planner")({
-	head: () => ({ meta: [{ title: "Flock planner — Flockstead" }] }),
+var $$splitComponentImporter$2 = () => import("./start-CUqdR3Tr.mjs");
+var Route$2 = createFileRoute("/start")({
+	head: () => ({ meta: [{ title: "Start here — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
 var $$splitComponentImporter$1 = () => import("./year-ikBfIPTG.mjs");
 var Route$1 = createFileRoute("/year")({
-	head: () => ({ meta: [{ title: "The working year — Flockstead" }] }),
+	head: () => ({ meta: [{ title: "The working year — Sheep: Flockstead" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./guide._slug-B3WRFSBf.mjs");
+var $$splitComponentImporter = () => import("./guide._slug-9ZMVJvh9.mjs");
 var Route = createFileRoute("/guide/$slug")({
 	head: ({ params }) => {
 		const chapter = getChapter(params.slug);
-		return { meta: [{ title: chapter ? `${chapter.title} — Flockstead` : "Not in the book — Flockstead" }] };
+		return { meta: [{ title: chapter ? `${chapter.title} — Sheep: Flockstead` : "Not in the book — Sheep: Flockstead" }] };
 	},
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
 var rootRouteChildren = {
-	IndexRoute: Route$4.update({
+	IndexRoute: Route$5.update({
 		id: "/",
 		path: "/",
-		getParentRoute: () => Route$5
+		getParentRoute: () => Route$6
 	}),
-	BreedsRoute: Route$3.update({
+	BreedsRoute: Route$4.update({
 		id: "/breeds",
 		path: "/breeds",
-		getParentRoute: () => Route$5
+		getParentRoute: () => Route$6
 	}),
-	PlannerRoute: Route$2.update({
+	PlannerRoute: Route$3.update({
 		id: "/planner",
 		path: "/planner",
-		getParentRoute: () => Route$5
+		getParentRoute: () => Route$6
+	}),
+	StartRoute: Route$2.update({
+		id: "/start",
+		path: "/start",
+		getParentRoute: () => Route$6
 	}),
 	YearRoute: Route$1.update({
 		id: "/year",
 		path: "/year",
-		getParentRoute: () => Route$5
+		getParentRoute: () => Route$6
 	}),
 	GuideSlugRoute: Route.update({
 		id: "/guide/$slug",
 		path: "/guide/$slug",
-		getParentRoute: () => Route$5
+		getParentRoute: () => Route$6
 	})
 };
-var routeTree = Route$5._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$6._addFileChildren(rootRouteChildren)._addFileTypes();
 var router_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
 function getRouter() {
 	return createRouter({

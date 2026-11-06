@@ -1,6 +1,6 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { J as require_react, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/planner-BeYYUf2b.js
+//#region node_modules/.nitro/vite/services/ssr/assets/planner-eWvXbLyD.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var PASTURE_RATES = {
@@ -371,7 +371,7 @@ function PlannerPage() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
 									label: "Sheep mineral",
 									value: `${formatNum(plan.mineralLbMonth, 1)} lb / month`,
-									hint: "Free choice. Never a cattle mix."
+									hint: "Free choice. Never cattle or goat mineral."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Row, {
 									label: "One square paddock",

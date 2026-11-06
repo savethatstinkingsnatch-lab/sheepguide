@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
 const LINKS = [
+  { to: "/start", label: "Start here", match: (path: string) => path.startsWith("/start") },
   { to: "/", label: "Guide", match: (path: string) => path === "/" || path.startsWith("/guide") },
   { to: "/breeds", label: "Breeds", match: (path: string) => path.startsWith("/breeds") },
   { to: "/planner", label: "Planner", match: (path: string) => path.startsWith("/planner") },
@@ -16,12 +17,13 @@ export function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-30 border-b border-line bg-paper/95 backdrop-blur-sm">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-          <Link to="/" className="flex items-baseline gap-2" onClick={() => setOpen(false)}>
+        <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-2 sm:px-6">
+          <Link to="/" className="flex min-w-0 flex-col py-1 leading-tight" onClick={() => setOpen(false)}>
             <span className="font-display text-2xl tracking-tight text-ink">Flockstead</span>
-            <span className="hidden text-xs font-medium tracking-widest text-muted uppercase sm:inline">
-              Field guide
+            <span className="text-xs text-muted">
+              The Education Revolution Pocket Guide, Volume 29: Sheep
             </span>
+            <span className="text-xs text-muted">by Blue and the Awesome Dudes</span>
           </Link>
           <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
             {LINKS.map((link) => {
@@ -83,8 +85,11 @@ export function Shell({ children }: { children: ReactNode }) {
       <footer className="mx-auto max-w-6xl px-4 py-12 text-sm text-muted sm:px-6">
         <p className="max-w-3xl">
           Flockstead is a field guide for learning, not a diagnosis or a feed ticket. Confirm dosing,
-          vaccines, and rations with a veterinarian who knows sheep, and with your local extension service.
-          Copper in cattle mineral can kill sheep.
+          withdrawals, and disease programs with a veterinarian. Copper in cattle or goat mineral can kill
+          sheep. Blue and the Awesome Dudes are not responsible for illness, injury, citations, or flock
+          loss. Part of The Education Revolution pocket guide series. Privacy: This guide does not collect
+          your name, email, or any personal information. Your checklist marks are saved only on your own
+          device.
         </p>
       </footer>
     </div>

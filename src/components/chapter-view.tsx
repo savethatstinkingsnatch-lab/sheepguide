@@ -155,7 +155,7 @@ export function ChapterView({ chapter }: { chapter: Chapter }) {
 
       <div className="lg:grid lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12">
         <aside className="hidden lg:block">
-          <nav className="sticky top-24" aria-label="Chapters">
+          <nav className="sticky top-32" aria-label="Chapters">
             <p className="text-xs font-medium tracking-widest text-muted uppercase">Chapters</p>
             <ul className="mt-3 space-y-1">
               {CHAPTERS.map((item) => {

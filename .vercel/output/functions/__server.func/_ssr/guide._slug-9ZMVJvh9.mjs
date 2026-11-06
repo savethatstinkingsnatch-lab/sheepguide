@@ -1,8 +1,8 @@
 import { b as Link, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as readMinutes, i as headingId, n as chapterIndex, r as getChapter, t as CHAPTERS } from "./content-BBE6pLtw.mjs";
+import { a as headingId, i as getChapter, o as readMinutes, r as chapterIndex, t as CHAPTERS } from "./content-1VZToBA3.mjs";
 import { n as TriangleAlert, o as ChevronRight, r as NotebookPen, s as ChevronLeft } from "../_libs/lucide-react.mjs";
-import { n as Route } from "./router-CiujCTLS.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/guide._slug-B3WRFSBf.js
+import { n as Route } from "./router-D45gCUAw.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/guide._slug-9ZMVJvh9.js
 var import_jsx_runtime = require_jsx_runtime();
 function Blocks({ blocks }) {
 	let heading = 0;
@@ -140,7 +140,7 @@ function ChapterView({ chapter }) {
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("aside", {
 				className: "hidden lg:block",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-					className: "sticky top-24",
+					className: "sticky top-32",
 					"aria-label": "Chapters",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "text-xs font-medium tracking-widest text-muted uppercase",

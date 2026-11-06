@@ -26,6 +26,25 @@ export type Chapter = {
   blocks: Block[];
 };
 
+export const GLOSSARY: { term: string; meaning: string }[] = [
+  { term: "Ewe", meaning: "Adult female. A ewe lamb is her daughter, still young." },
+  { term: "Ram", meaning: "Intact male." },
+  { term: "Wether", meaning: "A castrated male — easier to keep, and not a breeding plan." },
+  { term: "Lamb", meaning: "A young sheep, still on or recently off the ewe." },
+  { term: "Jug", meaning: "A small pen, about 5 by 5 feet, where a ewe and new lambs bond." },
+  { term: "Crutch", meaning: "Shearing the wool from dock and udder so lambs can find a teat and flies cannot." },
+  { term: "Flush", meaning: "A short rise in feed before breeding to encourage ovulation in thinner ewes." },
+  { term: "FAMACHA", meaning: "A trained eyelid-color score for anemia from barber-pole worm. Not a general health app." },
+  { term: "LGD", meaning: "Livestock guardian dog, bonded to the flock and living with it." },
+  { term: "Enterotoxemia", meaning: "“Overeating disease” from Clostridium; CDT helps prevent it." },
+  { term: "Pregnancy toxemia", meaning: "Energy crisis in late pregnancy." },
+  { term: "Scrapie", meaning: "Fatal brain disease; often tied to official ID tags." },
+  { term: "Foot rot", meaning: "Deep, smelly hoof infection that spreads." },
+  { term: "Hair sheep", meaning: "Breeds that shed and need little or no shearing." },
+  { term: "OPP", meaning: "Ovine progressive pneumonia (ask sellers)." },
+  { term: "CL", meaning: "Caseous lymphadenitis (abscess disease)." },
+];
+
 export const CHAPTERS: Chapter[] = [
   {
     slug: "starting",
@@ -39,6 +58,11 @@ export const CHAPTERS: Chapter[] = [
       {
         type: "p",
         text: "Sheep repay a clear reason. Meat, wool, milk, a 4-H project, or keeping grass down are different flocks wearing the same face. Write the reason down before you price a ram. A breed that is perfect for fine wool is a poor lawn mower if you have no shearer and no one to take the fleece.",
+      },
+      { type: "h", text: "Read the rules before the catalog" },
+      {
+        type: "p",
+        text: "Read city, county, and HOA rules before you buy. Some places ban livestock, limit numbers, or require setbacks. Sheep are quieter than roosters and still not always legal on a small lot.",
       },
       {
         type: "stats",
@@ -63,6 +87,11 @@ export const CHAPTERS: Chapter[] = [
           "Records, even plain ones: age, lambing history, and sire if they have it.",
         ],
       },
+      { type: "h", text: "Scrapie and flock identification" },
+      {
+        type: "p",
+        text: "Scrapie is a fatal brain disease of sheep and goats. The United States runs scrapie programs that often require official flock identification and special ear tags when animals move. Rules depend on your state and how you buy or sell. Ask your state veterinarian or USDA APHIS scrapie page before you move sheep across state lines or to a sale. Do not invent a tag number — get the official ones.",
+      },
       {
         type: "callout",
         callout: {
@@ -79,15 +108,15 @@ export const CHAPTERS: Chapter[] = [
       { type: "h", text: "Words shepherds actually use" },
       {
         type: "defs",
-        items: [
-          { term: "Ewe", meaning: "Adult female. A ewe lamb is her daughter, still young." },
-          { term: "Ram", meaning: "Intact male. A wether is a castrated male — easier, and not a breeding plan." },
-          { term: "Jug", meaning: "A small pen, about 5 by 5 feet, where a ewe and new lambs bond." },
-          { term: "Flush", meaning: "A short rise in feed before breeding to encourage ovulation in thinner ewes." },
-          { term: "Crutch", meaning: "Shearing the wool from dock and udder so lambs can find a teat and flies cannot." },
-          { term: "FAMACHA", meaning: "A trained eyelid-color score for anemia from barber-pole worm. Not a general health app." },
-          { term: "LGD", meaning: "Livestock guardian dog, bonded to the flock and living with it." },
-        ],
+        items: GLOSSARY,
+      },
+      {
+        type: "callout",
+        callout: {
+          tone: "note",
+          title: "See also",
+          body: "See also Volume 27: Goats for browse clearing and fencing contrasts — and never share mineral buckets between the two species.",
+        },
       },
       {
         type: "callout",
@@ -197,7 +226,7 @@ export const CHAPTERS: Chapter[] = [
         callout: {
           tone: "caution",
           title: "Copper will kill a sheep that a cow would ignore",
-          body: "Do not feed cattle mineral, cattle “all-stock” mixes you have not read, or poultry feed. Sheep need a mineral labeled for sheep, free choice, kept dry. Copper toxicity builds quietly and then destroys red blood cells. If a mix lists added copper for cattle or goats, it does not go in the sheep pen.",
+          body: "Do not feed cattle mineral, cattle “all-stock” mixes you have not read, poultry feed, or goat mineral. Goat mineral is made with more copper. It can poison sheep. Sheep need a mineral labeled for sheep, free choice, kept dry. Copper toxicity builds quietly and then destroys red blood cells. See Volume 27: Goats — their copper needs are the opposite problem.",
         },
       },
       { type: "h", text: "Water" },
@@ -325,6 +354,11 @@ export const CHAPTERS: Chapter[] = [
       {
         type: "p",
         text: "Most fetal growth is late. Raise energy over the last four to six weeks without making ewes so fat they cannot lamb. Crutch wool off the udder and dock a few weeks ahead so a newborn can find skin. Vaccinate for CDT on the schedule your vet likes, often two to four weeks before the first due date, and booster sheep who have never had the series. Bed the jugs. Buy iodine, obstetric lube, and a lamb milk replacer before you need them at 2 a.m.",
+      },
+      { type: "h", text: "Pregnancy toxemia" },
+      {
+        type: "p",
+        text: "Pregnancy toxemia (twin-lamb disease) hits thin or very fat ewes in late pregnancy, especially with twins or triplets. She goes off feed, lags behind, may seem blind or weak, then goes down. This is an emergency — call a vet. Prevention is steady energy in the last 4–6 weeks without sudden grain dumps, and body-condition scoring before lambing.",
       },
       { type: "h", text: "When she lambs" },
       {

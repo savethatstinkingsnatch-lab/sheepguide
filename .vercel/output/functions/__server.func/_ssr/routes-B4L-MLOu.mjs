@@ -1,7 +1,7 @@
 import { b as Link, q as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as CHAPTERS } from "./content-BBE6pLtw.mjs";
+import { t as CHAPTERS } from "./content-1VZToBA3.mjs";
 import { a as Library, c as CalendarDays, l as Calculator, u as ArrowUpRight } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-FHFkH2l3.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-B4L-MLOu.js
 var import_jsx_runtime = require_jsx_runtime();
 var TOOLS = [
 	{
@@ -60,10 +60,9 @@ function Home() {
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "mt-6 flex flex-wrap gap-3",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-									to: "/guide/$slug",
-									params: { slug: "starting" },
+									to: "/start",
 									className: "btn btn-primary",
-									children: "Start with the flock"
+									children: "New to sheep? Start here"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 									to: "/planner",
 									className: "btn bg-surface text-ink hover:bg-paper-deep",
@@ -177,7 +176,7 @@ function Home() {
 							children: "No Cu"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-2 text-sm leading-relaxed",
-							children: "Cattle mineral and a lot of goat feed carry copper sheep cannot clear. Buy sheep mineral."
+							children: "Cattle or goat mineral can kill sheep. Use a mineral labeled for sheep only."
 						})]
 					})
 				]

@@ -4,7 +4,7 @@ import { useChecklist } from "@/lib/flock/use-checklist";
 
 export const Route = createFileRoute("/year")({
   head: () => ({
-    meta: [{ title: "The working year — Flockstead" }],
+    meta: [{ title: "The working year — Sheep: Flockstead" }],
   }),
   component: YearPage,
 });
