@@ -4,7 +4,7 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { Shell } from "@/components/shell";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Sheep: Flockstead";
+const APP_NAME = "Volume 29: Sheep (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -15,7 +15,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A practical field guide to raising sheep: breeds, pasture, feeding, health, lambing, wool, and the working year.",
+          "Volume 29 of The Education Revolution, by Blue and the Awesome Dudes. A practical field guide to raising sheep: breeds, pasture, feeding, health, lambing, wool, and the working year.",
       },
       { name: "theme-color", content: "#3e6b4f" },
     ],
